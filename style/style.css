@@ -1,0 +1,146 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #222222;
+  color: white;
+  font-weight: 400;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.wrapper{
+  width: 1000px;
+  padding: 15px;
+  border-radius: 10px;
+  height: 800px;
+}
+
+.result-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper > h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wrapper > h2 {
+  font-size: 20px;
+  color: rgb(226, 226, 226);
+}
+.wrapper > .culculate-result-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.wrapper > .culculate-result-wrapper > button {
+  background: #29b0ea;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+
+
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+  display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button { 
+  display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: #f0f0f0;
+}
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  color: #e0e0e0;
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 18px;
+  border:1px solid #ecf0f1;
+  background:#ecf0f1;
+  padding:5px;
+  display: inline-block !important;
+  visibility: visible !important;
+}
+
+input[type="date"], focus {
+  color: #95a5a6;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+.wrapper-result{
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.result-item-wrapper{
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.result-item > h2 {
+  font-size: 20px;
+  font-family: 500;
+}
+
+.result-item > span{
+  font-size: 20px;
+  font-family: 700;
+}
+
+.loading {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #1c9dee;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
